@@ -9,22 +9,7 @@
 		<button name="sub">upload</button>
 		</center>
 		<?php
-			require 'autoload.php';
-			require 'Uploader.php';
-			require 'Helpers.php';
-			require 'Api.php';
-			
-			\Cloudinary::config(array( 
-			"cloud_name" => "dgybkzpxd", 
-			"api_key" => "774986288424458", 
-			"api_secret" => "gwBKHSrpOD9vIGAyvxgmxJhybvM", 
-			"secure" => true
-			));
-
-			if (isset($_POST["submit"])) {
-			print_r($_FILES["fileToUpload"]);
-			$cloudUpload = \Cloudinary\Uploader::upload($_FILES["fileToUpload"]['tmp_name']);
-			print_r($cloudUpload);
+			echo "hello world";
 }
 		?>
 	</body>
